@@ -10,7 +10,7 @@ class TypeSpeedGUI:
         self.root = tk.Tk()
 
         self.root.title("Typing Speed Application")
-        self.root.geometry("1000x800")
+        self.root.geometry("1000x900")
         #self.root.config(bg="Black")
 
         self.texts = open("texts.txt", "r").read().split("\n")
@@ -21,7 +21,7 @@ class TypeSpeedGUI:
         self.sample_label.grid(row=0, column=0, columnspan=2)
 
         self.input_entry = tk.Entry(self.frame, width=40, font=("Helvetica", 24))
-        self.input_entry.grid(row=1, column=0, columnspan=2)
+        self.input_entry.grid(row=1, column=0, columnspan=3)
         self.input_entry.bind("<KeyRelease>", self.start)
 
         self.speed_label = tk.Label(self.frame, text="Speed: \n0.00 CPS\n0.00 CPM\n0.00 WPS\n0.00 WPM",font=("Helvetica", 18))
