@@ -17,7 +17,7 @@ class TypeSpeedGUI:
 
         self.frame = tk.Frame(self.root)
 
-        self.sample_label = tk.Label(self.frame, text=random.choice(self.texts), font=("Helvetica", 18))
+        self.sample_label = tk.Label(self.frame, text=random.choice(self.texts), font=("Times New Roman", 18))
         self.sample_label.grid(row=0, column=0, columnspan=2)
 
         self.input_entry = tk.Entry(self.frame, width=40, font=("Helvetica", 24))
